@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3645786d79.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa fa-times" onclick="closemenu()" ></i>
+            </ul>
+            <i class="fa fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Web developer</p>
+            <h1>Hi, I'm<span> Devindi</span> <br> From Sri Lanka</h1>
+        </div>
+    </div>
+</div>
+
+<!--------about--------->
+   <div id="about">
+      <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+               <img src="aboutpic.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello there! I'm Devindi Karunathilaka, a dedicated and creative web developer with a knack for turning concepts into dynamic and responsive websites. With a strong foundation in both front-end and back-end technologies, I thrive on tackling challenges and crafting elegant solutions that enhance the user experience.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id ="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Design Web/App Interfaces</li>
+                        <li><span>Web Development</span><br>Web app development</li>
+                        <li><span>App Development</span><br>Bulding android apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span></span><br>No experience yet</li>
+                       
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2019</span><br>Wayamba University</li>
+                        <li><span>2021</span><br>Trincomalee campus Eastern University</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+   </div>
+
+   <!-------------services-------------->
+   <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+          <div class="services-list">
+            <div>
+                <i class="fa fa-code" aria-hidden="true"></i>
+                <h2>Web Design</h2>
+                <p>My love for coding goes beyond the screen; it's a commitment to creating solutions that make a 
+                    difference. Whether it's a personal project, collaborating 
+                    with a team, or working on a client's vision, I approach each task with 
+                    enthusiasm and a commitment to excellence.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa fa-crop" aria-hidden="true"></i>
+                <h2>UI/Ux Design</h2>
+                <p>Your vision is my inspiration. I work closely with you, embracing a collaborative 
+                    design process that incorporates your feedback at every stage. Your satisfaction is my priority,
+                     and I committed to bringing your ideas to life with precision and flair.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>App Design</h2>
+                <p>Ready to bring your app idea to life? Let's embark on a design journey that transforms concepts into captivating digital experiences. Contact us today, and I create an app that not only looks exceptional but also resonates with your target audience.
+
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+          </div>
+    </div>
+   </div>
+
+   <!------portfolio----------->
+   <div id="portfolio">
+       <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="user1.jpg" >
+                <div class="layer">
+                    <h3>Hospital Web Site</h3>
+                    <p>Users can visit online hospital. and users can make  appointment online. </p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="user2.jpg" >
+                <div class="layer">
+                    <h3>Salary System</h3>
+                    <p>Using this system can be calculate salary</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="user3.jpg" >
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>Users can visit online shop. and users can buy goods online. </p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+       </div>
+   </div>
+
+   <!--------------contact----------->
+
+   <div id="contact">
+       <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa fa-paper-plane" aria-hidden="true"></i>devindikarunathilaka88@gmail.com</p>
+                <p><i class="fa fa-phone-square" aria-hidden="true"></i>0768455271</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/devindin.karunathilaka?mibextid=9R9pXO"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://instagram.com/devindi_n_?igshid=YTQwZjQ0NmI0OA=="><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="www.linkedin.com/in/devindi-karunathilaka-4bb52b230"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </div>
+
+                <a href="myCV.pdf" download class="btn btn2">Download CV</a>
+            
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+       </div>
+       <div class="copyright">
+        <p>Copyright @ Devindi. Made by<i class="fa fa-heart" aria-hidden="true"></i>  Devindi</p>
+       </div>
+   </div>
+
+
+
+   <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname)
+      {
+        for(tablink of tablinks)
+        {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents)
+        {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+   </script>
+
+   <script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu()
+    {
+        sidemeu.style.right ="0";
+    }
+
+    
+    function closemenu()
+    {
+        sidemeu.style.right ="-200px";
+    }
+   </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwoy7ty4GsjyqzXgNFvFt9cchqqmiOqV_X38QM5W3AMKlJFJVRaLhDnbaBialH88WYctA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function()
+            {
+                msg.innerHTML =""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
